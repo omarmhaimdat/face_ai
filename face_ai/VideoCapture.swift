@@ -38,7 +38,7 @@ public class VideoCapture: NSObject {
         
         guard let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera,
                                                           for: .video,
-                                                          position: .back) else {
+                                                          position: .front) else {
             
             print("Error: no video devices available")
             return
